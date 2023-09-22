@@ -1,6 +1,8 @@
 #include <stdio.h>
-/* This should use the puts function to print text. */
-int main(void)
+/**
+ * main - This is a description
+ */
+void main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
 	return (0);
