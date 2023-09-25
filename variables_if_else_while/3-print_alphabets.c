@@ -1,4 +1,4 @@
-#include <stdio.h> 
+#include <stdio.h>
 /**
  * main - this will print out a string of letters
  *
@@ -8,7 +8,7 @@ int main(void)
 {
 	char letter = 'a';
 
-	while (letter <= 'z' )
+	while (letter <= 'z')
 	{
 		putchar(letter);
 		letter++;
