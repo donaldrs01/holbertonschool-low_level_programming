@@ -1,11 +1,6 @@
-#include <stdio.h>
-/**
- * main - this program should print _putchar
- *
- * Return: this should return a value of 0 when successful.
- */
-int main(void)
+#include <main.h> 
+
+int _putchar(char c)
 {
-	printf("_putchar\n"i);
-	return (0);
+	return write(1, &c, 1);
 }
