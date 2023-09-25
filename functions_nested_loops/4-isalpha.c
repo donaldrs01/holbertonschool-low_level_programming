@@ -4,7 +4,7 @@
  * _isalpha - checks if a character is part of the alphabet
  * @c: the character to check
  *
- * Return: 1 if c is part of the alphabet, 0 if it is not. 
+ * Return: 1 if c is part of the alphabet, 0 if it is not.
  */
 int _isalpha(int c)
 {
