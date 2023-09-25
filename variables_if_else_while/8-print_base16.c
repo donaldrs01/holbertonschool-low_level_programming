@@ -6,8 +6,9 @@
  */
 int main(void)
 {
+	char c;
 
-	for (char c = '0'; c <= 'f'; c++)
+	for (c = '0'; c <= 'f'; c++)
 	{
 		if ((c >= '0' && c <= '9') || (c >= 'a' && c <= 'f'))
 		{
