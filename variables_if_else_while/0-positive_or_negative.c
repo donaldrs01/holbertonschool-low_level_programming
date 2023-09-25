@@ -4,22 +4,32 @@
 #include <time.h>
 /* more headers goes there */
 
-/* betty style doc for function main goes there */
+/**
+ * main - description for main
+ *
+ * Description - tells if a number is positive or negative.
+ *
+ * Return: value should be 0.
+ */
 int main(void)
 {
-        int n;
+	int n;
 
-        srand(time(0));
-        n = rand() - RAND_MAX / 2;
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
 printf("%d is ", n);
-
-if (n > 0) {
-        printf("positive\n");
-} else if (n == 0) {
+if (n > 0)
+{
+	printf("positive\n");
+}
+else if (n == 0)
+{
 printf("zero\n");
-} else {
+}
+else
+{
 printf("negative\n");
 }
-        /* your code goes there */
-        return (0);
+/* your code goes there */
+return (0);
 }
