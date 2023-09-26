@@ -30,6 +30,12 @@ void times_table(void)
 				_putchar(product + '0');
 			}
 		}
-		_putchar('\n');
+		if (j == 9)
+		{
+			if (i < 9)
+			{
+				_putchar('\n');
+			}
+		}
 	}
 }
