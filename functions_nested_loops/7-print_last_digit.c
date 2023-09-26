@@ -3,8 +3,8 @@
 #include <limits.h>
 /**
  * print_last_digit - will print the last digit of a number
- * @n - the integer that is being evaluted
- * 
+ * @n: the integer that is being evaluted
+ *
  * Return: the last digit
  */
 int print_last_digit(int n)
