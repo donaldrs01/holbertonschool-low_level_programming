@@ -13,7 +13,7 @@ void more_numbers(void)
 		for (k = 0; k <= 14; k++) /* loop through the numbers 1-14 */
 		{
 			{
-				_putchar('0' + (int)numbers[k]);
+				_putchar('0' + (k % 10));
 			}
 		}
 		_putchar('\n');
