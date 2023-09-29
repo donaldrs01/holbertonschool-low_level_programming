@@ -10,8 +10,11 @@ void more_numbers(void)
 	for (i = 0; i < 10; i++) /* loops 10 times for each set of numbers */
 	{
 		for (k = 0; k <= 14; k++) /* loop through the numbers 1-14 */
-		{
+			if (j >= 10)
 			{
+				_putchar('0' + (k / 10)); /* print the tens digit */
+			}
+		{
 				_putchar('0' + (k % 10));
 			}
 		}
