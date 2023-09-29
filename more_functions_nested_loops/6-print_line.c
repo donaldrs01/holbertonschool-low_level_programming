@@ -13,7 +13,10 @@ void print_line(int n)
 	{
 		int i;
 
-		for (i = 0; i < n; i++) /* this is a loop counter - controles how many _ are printed*/
+		for (i = 0; i < n; i++) 
+/** this is a loop counter
+ * Controls how many __ characters are printed by keeping it under the value of 'n'
+ */
 		{
 			_putchar('_');
 		}
