@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * print_line - should draw a straight line with __ characters
- * @n: the number of times the character _ is printed 
+ * @n: the number of times the character _ is printed
  */
 void print_line(int n)
 {
@@ -12,7 +12,8 @@ void print_line(int n)
 	else
 	{
 		int i;
-		for (i = 0; i < n; i++) /* this is a loop counter - controles how many _ are printed, ensuring that the line is desired length specified by 'n' */
+
+		for (i = 0; i < n; i++) /* this is a loop counter - controles how many _ are printed*/
 		{
 			_putchar('_');
 		}
