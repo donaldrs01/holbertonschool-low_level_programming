@@ -12,7 +12,7 @@ void more_numbers(void)
 		for (k = 0; k <= 14; k++) /* loop through the numbers 1-14 */
 			if (k >= 10)
 			{
-				_putchar('0' + (k / 10)); /* print the tens digit */
+				_putchar('0' + (k / 10)); /* print the tens diggit */
 			}
 		{
 				_putchar('0' + (k % 10));
