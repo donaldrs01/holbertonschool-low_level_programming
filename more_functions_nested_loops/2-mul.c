@@ -9,10 +9,12 @@
 
 int mul(int a, int b)
 {
+	int result = 0;
+
 	while (b > 0)
 	{
 		result += a;
 		b--;
 	}
-	return (0)
+	return (0);
 }
