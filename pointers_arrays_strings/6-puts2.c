@@ -11,6 +11,7 @@ void puts2(char *str)
 	{
 		_putchar(str[i]);
 		i += 2;
+	}
 		/* This is the syntax for going up by 2 */
 
 		if (str[i] != '\0')
