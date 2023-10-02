@@ -2,7 +2,7 @@
 #include <limits.h>
 /**
  * _atoi - converts a string to an integer
- * s: the pointer to a string
+ * @s: the pointer to a string
  *
  * Return: 0 if no numbers in string, otherwise return the string
  */
