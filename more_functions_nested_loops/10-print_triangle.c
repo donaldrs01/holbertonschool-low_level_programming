@@ -4,7 +4,7 @@
  * @size: the size of the desired triangle
  */
 
-void print_triangle(int size);
+void print_triangle(int size)
 {
 	int row, space, hash; 
 
@@ -21,7 +21,7 @@ void print_triangle(int size);
 		}
 		for (hash = 0; hash < row; hash++)
 		{
-			_putchar('#);
+			_putchar('#');
 		}
 		_putchar('\n');
 	}
