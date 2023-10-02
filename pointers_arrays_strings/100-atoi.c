@@ -2,9 +2,9 @@
 #include <limits.h>
 /**
  * _atoi - converts a string to an integer
- * *s: the pointer to a string
+ * s: the pointer to a string
  *
- * Return: 0 if no numbers in string, otherwise return the string 
+ * Return: 0 if no numbers in string, otherwise return the string
  */
 int _atoi(char *s)
 {
@@ -33,11 +33,11 @@ int _atoi(char *s)
 		{
 			if (sign == 1)
 			{
-				return INT_MAX;
+				return (INT_MAX);
 			}
 			else
 			{
-				return INT_MIN;
+				return (INT_MIN);
 			}
 		}
 
