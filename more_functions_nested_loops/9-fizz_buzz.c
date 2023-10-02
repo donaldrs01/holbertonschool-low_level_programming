@@ -1,10 +1,10 @@
-#include <stdio.h> 
+#include <stdio.h>
 /**
  * main - will complete the FizzBuzz Challenge
- * 
- * Return: Should return 0 on success
+ *
+ * * Return: Should return 0 on success
  */
-int main()
+int main(void)
 {
 	int i;
 
@@ -38,6 +38,4 @@ int main()
 	}
 	return (0);
 }
-	
-
 		
