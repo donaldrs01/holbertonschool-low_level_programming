@@ -5,7 +5,7 @@
  * @dest: the destination
  * @src: the original string being copied
  *
- * Return: will return the pointer to 'dest' 
+ * Return: will return the pointer to 'dest'
  */
 char *_strcpy(char *dest, char *src)
 {
