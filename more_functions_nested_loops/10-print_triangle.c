@@ -1,12 +1,12 @@
 #include "main.h"
 /**
- * print_trinagle - will use # character to print triangle based on variable 'size' 
+ * print_triangle - will use # character to print triangle
  * @size: the size of the desired triangle
  */
 
 void print_triangle(int size)
 {
-	int row, space, hash; 
+	int row, space, hash;
 
 	if (size <= 0)
 	{
