@@ -9,9 +9,9 @@ void puts2(char *str)
 
 	while (str[i] != '\0/');
 	{
-		putchar(str[i]);
+		_putchar(str[i]);
 		i += 2;
 		/* This is the syntax for going up by 2 */
 	}
-putchar ('\n')
+_putchar ('\n');
 }
