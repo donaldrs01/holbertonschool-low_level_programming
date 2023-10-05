@@ -13,7 +13,7 @@ char *result = dest;
 
 while (*src != '\0' && n > 0)
 {
-	*src = *dest;
+	*dest = *src;
 	src++;
 	dest++;
 	n--;
