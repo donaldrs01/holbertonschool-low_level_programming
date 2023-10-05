@@ -12,13 +12,13 @@ char *_strcat(char *dest, char *src)
 
 	while (*dest != '\0')
 	{
-		dest++;
+		dest++; /* finds the end of the dest string */
 	}
 	while (*src != '\0')
 	{
 		*dest = *src;
 		dest++;
-		src++;
+		src++; /* this copies from src to dest */
 	}
 	*dest = '\0';
 
