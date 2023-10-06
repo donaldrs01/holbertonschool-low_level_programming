@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * *leet - will encode a string into leet speak
- * @*str: input string
+ * @str: input string
  *
  * Return: leet string
  */
@@ -16,7 +16,7 @@ char *leet(char *str)
 	{
 		char c = *ptr;
 		i = 0;
-
+		
 		while (leetChars[i] != '\0')
 		{
 			if (c == leetChars[i])
