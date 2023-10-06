@@ -8,30 +8,23 @@
 char *leet(char *str)
 {
 	char *ptr = str;
-	
+	char leetChars[] = "aAeEoOtTlL";
+	char leetReplacements[] = "4433770011";
+	int i;
+
 	while (*ptr != '\0')
 	{
 		char c = *ptr;
+		i = 0;
 
-		if (c == 'a' || c == 'A')
+		while (leetChars[i] != '\0')
 		{
-			*ptr = '4';
-		}
-		else if (c == 'e' || c == 'E')
-		{
-			*ptr = '3';
-		}
-		else if (c == 'o' || c == ')')
-		{
-			*ptr = '0';
-		}
-		else if (c == 't' || c == 'T')
-		{
-			*ptr = '7';
-		}
-		else if (c == 'l' || c == 'L')
-		{
-			*ptr = '1';
+			if (c == leetChars[i])
+			{
+				*ptr = leetReplacements[i];
+				break;
+			}
+			i++;
 		}
 
 		ptr++;
