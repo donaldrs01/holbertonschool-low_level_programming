@@ -9,14 +9,14 @@ char *leet(char *str)
 {
 	char *ptr = str;
 	char leetChars[] = "aAeEoOtTlL";
-	char leetReplacements[] = "4433770011";
+	char leetReplacements[] = "4433007711";
 	int i;
 
 	while (*ptr != '\0')
 	{
 		char c = *ptr;
 		i = 0;
-		
+
 		while (leetChars[i] != '\0')
 		{
 			if (c == leetChars[i])
