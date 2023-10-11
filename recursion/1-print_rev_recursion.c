@@ -17,4 +17,3 @@ void _print_rev_recursion(char *s)
 	 * When string reaches end, it prints back in reverse order.
 	 * Top of the stack is the most recent character (at end of string).
 	 */
-}
