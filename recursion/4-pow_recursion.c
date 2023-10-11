@@ -2,8 +2,8 @@
 #include <stdio.h>
 /**
  * _pow_recursion - will return value of x to the power of y
- * @x: the integer 
- * @y: the power at which the integer will be raised 
+ * @x: the integer
+ * @y: the power at which the integer will be raised
  *
  * Return: -1 if y < 0, otherwise correct value
  */
