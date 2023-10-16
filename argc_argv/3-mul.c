@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * main - will multiply two integers
  * @argc: the number of arguments
