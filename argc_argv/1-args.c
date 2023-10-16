@@ -6,10 +6,9 @@
  *
  * Return: 0 on success
  */
-int main(int argc, char *argv[])
+int main(int argc)
 {
 	int numArgs = argc - 1;
-	void(*argv);
 
 	printf("%d\n", numArgs);
 
