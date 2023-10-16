@@ -24,7 +24,6 @@ int main(int argc, char *argv[])
 		sum = 0;
 		for (i = 1; i < argc; i++)
 		{
-			*endptr;
 			number = strtol(argv[i], &endptr, 10);
 
 			if (*endptr != '\0' || number <= 0)
