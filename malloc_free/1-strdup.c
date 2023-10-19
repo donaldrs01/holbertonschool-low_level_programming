@@ -24,6 +24,7 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 	strcpy(duplicate, str);
+	free(duplicate);
 	return (duplicate);
 }
 
