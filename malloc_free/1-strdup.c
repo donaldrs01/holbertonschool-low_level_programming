@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stlib.h>
+#include <stdlib.h>
 #include <stdio.h>
 /**
  * _strdup - returns pointer to new space in memory contains copy of input
