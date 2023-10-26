@@ -5,7 +5,7 @@
  * print_dog - prints the contents of a struct dog
  * @d: pointer to the struct dog
  */
-void print_dog(struct dog *d)
+void print_dog(struct dog *d, char *name, float age, char *owner)
 {
 	if (d != NULL)
 	{
@@ -15,3 +15,4 @@ void print_dog(struct dog *d)
 	}
 }
 
+int main
