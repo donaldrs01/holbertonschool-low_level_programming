@@ -2,7 +2,7 @@
 /**
  * op_add - returns the sum of ints a and b
  * @a: the first integer
- * @b: the second integer 
+ * @b: the second integer
  *
  * Return: the sum of a and b
  */
@@ -14,7 +14,7 @@ int op_add(int a, int b)
 /**
  * op_sub - returns the difference of a and b
  * @a: the first integer
- * @b: the second integer 
+ * @b: the second integer
  *
  * Return: the difference of a and b
  */
@@ -24,7 +24,7 @@ int op_sub(int a, int b)
 }
 
 /**
- * op_mul: returns the product of a and b
+ * op_mul - returns the product of a and b
  * @a: the first integer
  * @b: the second integer
  *
