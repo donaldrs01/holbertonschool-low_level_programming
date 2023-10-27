@@ -2,7 +2,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
+/**
+ * main - runs our program
+ * @argc: the number of arguments
+ * @argv: the names of the arguments
+ */
 int main(int argc, char *argv[])
 {
 	int num1;
