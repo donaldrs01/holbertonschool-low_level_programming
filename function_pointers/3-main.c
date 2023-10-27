@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
 	operator = argv[2];
 	num2 = atoi(argv[3]);
 
-	(*op_func)(int, int) = get_op_func(operator);
+	op_func = get_op_func(operator);
 
 	if (op_func == NULL)
 	{
