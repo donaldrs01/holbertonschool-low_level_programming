@@ -9,6 +9,7 @@ int main(int argc, char *argv[])
 	char *operator;
 	int num2;
 	int result;
+	int (*op_func)(int, int);
 
 	if (argc != 4)
 	{
@@ -20,7 +21,7 @@ int main(int argc, char *argv[])
 	operator = argv[2];
 	num2 = atoi(argv[3]);
 
-	int (*op_func)(int, int) = get_op_func(operator);
+	(*op_func)(int, int) = get_op_func(operator);
 
 	if (op_func == NULL)
 	{
