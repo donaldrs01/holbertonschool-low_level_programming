@@ -6,6 +6,8 @@
  * main - runs our program
  * @argc: the number of arguments
  * @argv: the names of the arguments
+ *
+ * Return: 98, 99 and 100 on failure, otherwise 0
  */
 int main(int argc, char *argv[])
 {
