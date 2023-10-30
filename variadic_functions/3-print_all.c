@@ -12,34 +12,38 @@ void print_all(const char * const format, ...)
 	char c;
 	float f;
 	char *s;
+	int printed = 0;
 	va_list args;
 
 	va_start(args, format);
 
 	while (format[i] != '\0')
 	{
-		if (i > 0)
-		{
-			printf(", ");
-		}
-
 		switch (format[i])
 		{
 		case 'c':
 			c = (char) va_arg(args, int);
-			printf("%c", c);
+			printf("%s%c", (printed ? ", " : ""), c);
+			printed = 1;
+			/**
+			 * inside each switch statement:
+			 * includes space and comma only if printed is true
+			 */
 			break;
 		case 'i':
 			num = va_arg(args, int);
-			printf("%d", num);
+			printf("%s%d", (printed ? ", " : ""), num);
+			printed = 1;
 			break;
 		case 'f':
 			f = (float) va_arg(args, double);
-			printf("%f", f);
+			printf("%s%f", (printed ? ", " : ""), f);
+			printed = 1;
 			break;
 		case 's':
 			s = va_arg(args, char *);
-			printf("%s", (s == NULL) ? "(nil)" : s);
+			printf("%s%s", (printed ? ", " : ""), (s == NULL) ? "(nil)" : s);
+			printed = 1;
 			break;
 		}
 
