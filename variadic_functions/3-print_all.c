@@ -18,6 +18,11 @@ void print_all(const char * const format, ...)
 
 	while (format[i] != '\0')
 	{
+		if (i > 0)
+		{
+			printf(", ");
+		}
+
 		switch (format[i])
 		{
 		case 'c':
