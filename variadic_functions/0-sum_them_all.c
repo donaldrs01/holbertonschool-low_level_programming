@@ -12,6 +12,7 @@ int sum_them_all(const unsigned int n, ...)
 	int sum;
 	va_list args; /* holds info about variable arguments */
 	int num;
+	unsigned int i;
 
 	if (n == 0)
 	{
@@ -21,7 +22,7 @@ int sum_them_all(const unsigned int n, ...)
 	sum = 0;
 	va_start(args, n);
 
-	for (unsigned int i = 0; i < n; i++)
+	for (i = 0; i < n; i++)
 	{
 		num = va_arg(args, int);
 		sum += num;
