@@ -10,3 +10,5 @@ typedef struct list_s /* singly linked list node structure */
 
 int _putchar(char c);
 size_t print_list(const list_t *h);
+
+#endif
