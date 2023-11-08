@@ -1,5 +1,8 @@
 #ifndef LISTS_H
 #define LISTS_H
+
+#include <stddef.h>
+
 /**
  * struct list_s - sample data structure
  * @str: string pointer
