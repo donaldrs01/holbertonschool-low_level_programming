@@ -4,7 +4,7 @@
  * struct list_s - sample data structure
  * @str: string pointer
  * @len: length of the string
- * @next: points to the next node
+ * @next: points to the next node.
  *
  * Description: singly linked list node structure
  */
