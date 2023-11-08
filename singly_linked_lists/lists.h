@@ -1,7 +1,7 @@
 #ifndef LISTS_H
 #define LISTS_H
 /**
- * list_s - sample data structure
+ * struct list_s - sample data structure
  * @str: string pointer
  * @len: length of the string
  * @next: points to the next node
