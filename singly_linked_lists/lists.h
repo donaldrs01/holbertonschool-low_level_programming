@@ -1,5 +1,5 @@
-#define LISTS_H
 #ifndef LISTS_H
+#define LISTS_H
 
 typedef struct list_s /* singly linked list node structure */
 {
