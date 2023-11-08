@@ -1,5 +1,11 @@
 #ifndef LISTS_H
 #define LISTS_H
+/**
+ * list_s - sample data structure
+ * @str: string pointer
+ * @len: length of the string
+ * @next: points to the next node
+ */
 
 typedef struct list_s /* singly linked list node structure */
 {
