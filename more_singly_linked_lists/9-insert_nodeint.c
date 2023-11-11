@@ -32,7 +32,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	if (*head == NULL || idx == 0) /* not possible to add new node */
 		return (NULL);
 
-	*current = *head; /* move through list to node before idx */
+	current = *head; /* move through list to node before idx */
 	while (count < idx - 1)
 	{
 		if (current == NULL)
