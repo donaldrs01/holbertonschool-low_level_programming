@@ -23,6 +23,11 @@ unsigned int binary_to_uint(const char *b)
 		}
 
 		result = (result << 1) + (*b - '0');
+		/** 
+		 * shifts value of result one bit to left 
+		 * equivalent of multiplying by 2 in binary
+		 * adds integer value of current character
+		 */
 		b++;
 	}
 
