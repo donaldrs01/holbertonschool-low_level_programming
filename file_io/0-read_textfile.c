@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 #include <stddef.h>
+#include <stdlib.h>
 #include <sys/types.h>
 /**
  * read_textfile - reads a text file and prints it to st-o
