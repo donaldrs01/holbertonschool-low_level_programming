@@ -17,10 +17,10 @@ int set_bit(unsigned long int *n, unsigned int index)
 	*n = *n | (1 << index);
 	return (1);
 	/**
-	 * left-shifts 1 by 'index' positions 
+	 * left-shifts 1 by 'index' positions
 	 * creates binary number where all bits are 0
 	 * EXCEPT for index position, where it is 1
-	 * after doing this, does bitwise OR operation 
+	 * after doing this, does bitwise OR operation
 	 * compares each bit of n to # created by shift
 	 * if either # is 1, resulting bit is 1
 	 * sets the bit at index position to 1
