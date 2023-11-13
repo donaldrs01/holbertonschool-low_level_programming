@@ -24,3 +24,4 @@ int get_bit(unsigned long int n, unsigned int index)
 	 * if least sig bit is 0, result is 0
 	 * returns either 0 or 1
 	 */
+}
