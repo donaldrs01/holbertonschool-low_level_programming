@@ -15,8 +15,13 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	FILE *file;
 	char *storage = malloc((letters + 1) * sizeof(char));
 	/* stores characters read from file */
-	ssize_t charsread = fread(storage, sizeof(char), letters, file);
+	ssize_t charsread = 0;
 	/* stores # of characters read from file using 'fread' */
+
+	if (storage == NULL)
+	{
+		return (-1);
+	}
 
 	if (filename == NULL)
 	{
@@ -30,6 +35,8 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		free(storage);
 		return (0);
 	}
+
+	charsread = fread(storage, sizeof(char), letters, file);
 
 	if (charsread <= 0)
 	{
