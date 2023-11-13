@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 #include <stddef.h>
-#include <sys.types.h>
+#include <sys/types.h>
 /**
  * read_textfile - reads a text file and prints it to st-o
  * @filename: the name of the file to open and read
