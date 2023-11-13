@@ -3,7 +3,7 @@
 #include <string.h>
 #include <stdio.h>
 #include <sys/stat.h>
-/** 
+/**
  * create_file - creates a file with various specs
  * @filename: name of file to be created
  * @text_content: NULL terminated string to write in file
