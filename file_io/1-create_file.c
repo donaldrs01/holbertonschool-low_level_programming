@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 #include <string.h>
+#include <stdio.h>
 /** 
  * create_file - creates a file with various specs
  * @filename: name of file to be created
