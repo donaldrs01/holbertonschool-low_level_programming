@@ -21,5 +21,6 @@ int clear_bit(unsigned long int *n, unsigned int index)
 	 * INVERTS by using the not (~) operator
 	 * Flips all bits, so bit at index becomes 0 and others become 1
 	 * AND operation performed
+	 */
 	return (1);
 }
