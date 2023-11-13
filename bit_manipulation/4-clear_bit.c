@@ -2,7 +2,7 @@
 #include <stdio.h>
 /**
  * clear_bit - sets value of a bit to '0' at given index value
- * @*n: pointer to number in which bit is set
+ * @n: pointer to number in which bit is set
  * @index: position of the bit to be set in number 'n'
  *
  * Return: 1 on success, -1 on error
