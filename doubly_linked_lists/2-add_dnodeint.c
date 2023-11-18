@@ -1,6 +1,7 @@
 #include "lists.h"
 #include <stddef.h>
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * add_dnodeint - function that adds a new node at head of list
  * @head: double pointer to head of list
