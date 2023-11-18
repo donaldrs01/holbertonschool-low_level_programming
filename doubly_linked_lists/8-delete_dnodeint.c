@@ -34,6 +34,10 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 		count++;
 		current = current->next;
 	}
+	if (current == NULL) /* returns -1 when index is out of bounds */
+	{
+		return (-1);
+	}
 	current->prev->next = current->next; /* updates next ptr of previous node */
 	if (current->next != NULL)
 	{
