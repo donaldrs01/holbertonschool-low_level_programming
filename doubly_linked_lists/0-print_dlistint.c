@@ -1,6 +1,7 @@
 #include "lists.h"
 #include <stdio.h>
 #include <stdarg.h>
+#include <stddef.h>
 /**
  * print_dlistint - function that prints all elements of d-linked list
  * @h: pointer to the head of the list
