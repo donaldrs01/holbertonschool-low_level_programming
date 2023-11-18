@@ -2,6 +2,7 @@
 #include <stdarg.h>
 #include <stddef.h>
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * add_dnodeint_end - adds a new node at end of linked list
  * @head: double pointer to head of the list
@@ -13,7 +14,6 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
 	dlistint_t *new_node;
 	dlistint_t *current;
-	dlistint_t *last = *head;
 
 	new_node = malloc(sizeof(dlistint_t));
 	if (new_node == NULL)
@@ -31,7 +31,7 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 	}
 	else /* traverse to end of list */
 	{
-		dlistint_t *current = *head;
+		dlistint_t current = head;
 
 		while (current->next != NULL)
 		{
