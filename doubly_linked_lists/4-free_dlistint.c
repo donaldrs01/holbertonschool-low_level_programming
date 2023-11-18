@@ -2,6 +2,7 @@
 #include <stdarg.h>
 #include <stddef.h>
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * free_dlistint - function that frees a dlistint_t list
  * @head: pointer to head of list
