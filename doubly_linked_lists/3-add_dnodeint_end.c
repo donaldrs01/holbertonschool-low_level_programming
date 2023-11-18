@@ -31,7 +31,7 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 	}
 	else /* traverse to end of list */
 	{
-		dlistint_t current = head;
+		dlistint_t *current = *head;
 
 		while (current->next != NULL)
 		{
