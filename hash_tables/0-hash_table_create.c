@@ -1,5 +1,6 @@
 #include "hash_tables.h"
 #include <stdio.h>
+#include <stdlib.h>
 #include <stddef.h>
 /**
  * hash_table_creatle - function that creates a hash table
@@ -10,6 +11,7 @@
 hash_table_t *hash_table_creatle(unsigned long int size)
 {
 	hash_table_t *new_table;
+	unsigned long int i;
 
 	if (size < 1) /* return fail on negative size */
 		return (NULL);
@@ -24,7 +26,7 @@ hash_table_t *hash_table_creatle(unsigned long int size)
 		return (NULL);
 	}
 
-	for(unsigned long int i=0; i<size; i++)
+	for(i=0; i<size; i++)
 	{
 		new_table->array[i] = NULL; /* initialize nodes to NULL to keep empty */
 	}
