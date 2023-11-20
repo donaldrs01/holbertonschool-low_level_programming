@@ -19,7 +19,8 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 		return (NULL);
 	}
 
-	index = key_index((unsigned char *)key, ht->size); /* calculate index for the key */
+	index = key_index((unsigned char *)key, ht->size); 
+	/* calculate index for the key */
 
 	if (ht->array[index] == NULL) /* check to see that index is free */
 	{
@@ -31,7 +32,8 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 
 			while (current != NULL)
 			{
-				if (strcmp(current->key,key) == 0) /* checks for match based on key input */
+				if (strcmp(current->key, key) == 0) 
+					/* checks for match based on key input */
 				{
 					return (current->value); /* returns value if key is found */
 				}
@@ -39,5 +41,6 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 			}
 	}
 
-	return (NULL); /* returns NULL if no match after checking all nodes in linked list */
+	return (NULL); 
+	/* returns NULL if no match after checking all nodes in linked list */
 }
