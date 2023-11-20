@@ -14,12 +14,17 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 	unsigned long int index;
 	hash_node_t *current;
 
+	if (ht == NULL)
+	{
+		return (NULL);
+	}
+
 	if (key[0] == '\0') /* checks if key is empty string */
 	{
 		return (NULL);
 	}
 
-	index = key_index((unsigned char *)key, ht->size); 
+	index = key_index((unsigned char *)key, ht->size);
 	/* calculate index for the key */
 
 	if (ht->array[index] == NULL) /* check to see that index is free */
@@ -32,7 +37,7 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 
 			while (current != NULL)
 			{
-				if (strcmp(current->key, key) == 0) 
+				if (strcmp(current->key, key) == 0)
 					/* checks for match based on key input */
 				{
 					return (current->value); /* returns value if key is found */
@@ -41,6 +46,6 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 			}
 	}
 
-	return (NULL); 
+	return (NULL);
 	/* returns NULL if no match after checking all nodes in linked list */
 }
