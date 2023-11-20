@@ -8,7 +8,7 @@
  *
  * Return: pointer to new hash table on success, NULL on failure
  */
-hash_table_t *hash_table_creatle(unsigned long int size)
+hash_table_t *hash_table_create(unsigned long int size)
 {
 	hash_table_t *new_table;
 	unsigned long int i;
