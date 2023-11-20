@@ -44,17 +44,19 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 			if (strcmp(current->key, key) == 0)
 			{
 				free(current->value); /* updates value if key already exists */
-				free(new_node->key); 
+				current->value = strdup(value);
+				free(new_node->key);
 				free(new_node->value);
 				free(new_node);
-				return (1);
+                                return (1);
+                        }
+                        if (current->next == NULL) /* checks if current node is last on list */
+                        {
+                                new_node->next = current->next;
+                                current->next = new_node; /*adds new node to beg. of list */
+                                return (1);
 			}
-			if (current->next == NULL) /* checks if current node is last on list */
-			{
-				new_node->next = current->next;
-				current->next = new_node; /*adds new node to beg. of list */
-				return (1);
-			}
+
 			current = current->next; /* moves current ptr to next node */
 		}
 	}
