@@ -26,7 +26,7 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 	}
 	else
 	{
-		current = ht->array[index] /* assigns 'current' to index */
+		current = ht->array[index]; /* assigns 'current' to index */
 
 			while (current != NULL)
 			{
