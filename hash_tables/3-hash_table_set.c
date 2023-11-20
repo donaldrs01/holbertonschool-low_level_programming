@@ -44,7 +44,8 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 			if (strcmp(current->key, key) == 0)
 			{
 				free(current->value); /* updates value if key already exists */
-				current->value = strdup(value);
+				free(new_node->key); 
+				free(new_node->value);
 				free(new_node);
 				return (1);
 			}
