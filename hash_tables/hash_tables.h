@@ -4,7 +4,7 @@
 /* data structure declaration */
 
 /**
- * struct hash_node_s - Node of a hash table 
+ * struct hash_node_s - Node of a hash table
  *
  * @key: the key (string)
  * The key is unique in the HashTable
