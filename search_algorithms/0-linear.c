@@ -24,10 +24,7 @@ int linear_search(int *array, size_t size, int value)
 		/* compare value to element */
 
 		if (array[i] == value)
-		{
-			printf("Found at index: %lu\n", i);
 			return (i); /* return index if value found */
-		}
 	}
 
 	printf("Value %d not found in the array\n", value);
